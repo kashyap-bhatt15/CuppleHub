@@ -1,0 +1,23 @@
+<h1>Questionnaire</h1>
+
+<div>
+  <h3>What do you like most?</h3>
+  <%= form_for(@couple) do |f| %>
+    <%= f.fields_for :user_likes do |likes| %>
+      <ul>
+        <li>
+          <%= likes.label :Q1, image_tag("http://placehold.it/250x250&text=Food") %>
+          <%= likes.radio_button :Q1, :food  %>
+        </li>
+        <li>
+          <%= likes.label :Q1, image_tag("http://placehold.it/250x250&text=Outdoors") %>
+          <%= likes.radio_button :Q1, :outdoors  %>
+        </li>
+        <li>
+          <%= likes.label :Q1, image_tag("http://placehold.it/250x250&text=Shop") %>
+          <%= likes.radio_button :Q1, :shop  %>
+        </li>
+      </ul>
+    <% end %>
+  <% end %>
+</div>

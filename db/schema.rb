@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130622170555) do
+ActiveRecord::Schema.define(:version => 20130622194445) do
 
   create_table "couples", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -39,6 +39,38 @@ ActiveRecord::Schema.define(:version => 20130622170555) do
     t.string   "long"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "questions", :force => true do |t|
+    t.string   "a"
+    t.string   "b"
+    t.string   "c"
+    t.string   "d"
+    t.string   "e"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "tests", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.integer  "numbers"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "user_likes", :force => true do |t|
+    t.integer  "nightlife"
+    t.integer  "food"
+    t.integer  "outdoors"
+    t.integer  "athletic"
+    t.integer  "shop"
+    t.integer  "travel"
+    t.integer  "culture"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "couple_id"
   end
 
 end

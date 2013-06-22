@@ -1,5 +1,6 @@
 CuppleHub::Application.routes.draw do
   resources :outings
+  match "/questions", to: 'home#show', as: 'questions'
 
   devise_for :couples
   resources :couples do

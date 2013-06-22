@@ -1,0 +1,21 @@
+<%= link_to "CuppleHub", root_path, :class => 'brand' %>
+<ul class="nav">
+  <% if couple_signed_in? %>
+    <li>
+    <%= link_to('Logout', destroy_couple_session_path, :method=>'delete') %>
+    </li>
+  <% else %>
+    <li>
+    <%= link_to('Login', new_couple_session_path)  %>
+    </li>
+  <% end %>
+  <% if couple_signed_in? %>
+    <li>
+    <%= link_to('Edit account', edit_couple_registration_path) %>
+    </li>
+  <% else %>
+    <li>
+    <%= link_to('Sign up', new_couple_registration_path)  %>
+    </li>
+  <% end %>
+</ul>

@@ -1,4 +1,9 @@
 CuppleHub::Application.routes.draw do
+
+  get "front/index"
+
+  get "modal/index"
+
   resources :outings
   match "/questions", to: 'home#show', as: 'questions'
 

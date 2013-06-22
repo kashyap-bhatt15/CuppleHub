@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nightlife: 1
+  food: 1
+  outdoors: 1
+  athletic: 1
+  shop: 1
+  travel: 1
+  culture: 1
+
+two:
+  nightlife: 1
+  food: 1
+  outdoors: 1
+  athletic: 1
+  shop: 1
+  travel: 1
+  culture: 1

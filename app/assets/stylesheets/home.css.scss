@@ -2,15 +2,62 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
-div {
+// questions page
+div.questions {
   text-align: center;
   ul {
     list-style: none;
     li {
       margin: 5px;
       display: inline-block;
+    }
+  }
+}
+
+
+
+// Splash page
+
+body.splash {
+  background: url('cupple_hub.svg')no-repeat 30px center fixed,
+              url('cupplebackground.jpg')no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  div.splash {
+    top: 90%;
+    left: 50%;
+    position: fixed;
+    margin-left: -150px;
+    margin-top: -40px;
+    form {
+      div {
+        // position: absolute;
+        // top: 650px;
+        // left: 550px;
+        label {
+          width: auto;
+          height: auto;
+          display: inline-block;
+          input {
+            border-radius: 0;
+            background: none;
+            border: 2px solid white;
+            height: 35px;
+            text-align: center;
+            color: darken(white, 20%);
+          }
+        }
+        input.button {
+          height: 45px;
+          width: 75px;
+          border: 0;
+          margin-bottom: 10px; 
+          display: inline-block;
+          background-color: #ffeea0;
+        }
+      }
     }
   }
 }

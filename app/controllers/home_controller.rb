@@ -4,4 +4,7 @@ class HomeController < ApplicationController
   def show
     @couple = Couple.find(1)
   end
+  
+  def modal1
+  end
 end

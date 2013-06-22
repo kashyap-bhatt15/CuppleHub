@@ -1,1 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CuppleHub - The way for couples to connect with other couples!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <!-- styles -->
+  <link href="/css/bootstrap.css" rel="stylesheet" />
+  <link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="css/prettyPhoto.css" rel="stylesheet" />
+  <link href="/css/animate.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
+  <link href="/color/default.css" rel="stylesheet" />
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+  <link rel="shortcut icon" href="ico/favicon.ico" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= content_for?(:title) ? yield(:title) : "CuppleHub" %></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= yield(:head) %>
+</head>
+<body>
+<header>
+<!-- start top -->
+<div id="topnav" class="navbar navbar-fixed-top default">
+  <div class="navbar-inner">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+        <!-- <img src="/img/logo.png" alt="" /> -->
+        </a>
+      </div>
+      <div class="navigation">
+        <nav>
+        <ul class="nav pull-right">
+          <li class="current"><a href="#intro">Home</a></li>
+          <li><a href="#about">How it works?</a></li>
+          <li><a href="#services">About Us</a></li>
+          <li><a href="#works">Sign up</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+<!-- end top -->
+</header>
+
 <%= yield %>
+
+<footer>
+<div class="verybottom">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="aligncenter">
+          <div class="logo">
+            <a class="brand" href="index.html">
+            <!-- <img src="/img/logo.png" alt="" /> -->
+            </a>
+          </div>
+          <p>
+             &copy; CuppleHub 2013 - All right reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+<!-- javascript -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.easing.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/parallax/jquery.parallax-1.1.3.js"></script>
+<script src="/js/nagging-menu.js"></script>
+<script src="/js/jquery.nav.js"></script>
+<script src="/js/prettyPhoto/jquery.prettyPhoto.js"></script>
+<script src="/js/portfolio/jquery.quicksand.js"></script>
+<script src="/js/portfolio/setting.js"></script>
+<script src="/js/hover/jquery-hover-effect.js"></script>
+<script src="/js/jquery.scrollTo.js"></script>
+<script src="/js/twitter/jquery.tweet.js"></script>
+<script src="/js/twitter/function.js"></script>
+<script src="/js/animate.js"></script>
+<script src="/js/custom.js"></script>
+</body>
+</html>

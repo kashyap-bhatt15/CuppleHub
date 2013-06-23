@@ -5,8 +5,10 @@ class HomeController < ApplicationController
   end
   def modal1
   end
+  
   def splash
   end
+  
   def profile
     respond_to do |format|
       format.html

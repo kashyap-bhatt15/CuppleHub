@@ -3,7 +3,7 @@
   <%= form_tag(questions_path) do  %>
     <div>
       <%= label_tag :email do %>
-        <%= text_field_tag :email, nil, autofocus: true, placeholder: "Enter your email to get started!" %>
+        <%= text_field_tag :email, nil, method: :get,autofocus: true, placeholder: "Enter your email to get started!" %>
       <% end %>
       <%= submit_tag 'Go!', :class => "button" %>
     </div>

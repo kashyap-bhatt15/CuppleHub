@@ -8,4 +8,6 @@ class HomeController < ApplicationController
   end
   def splash
   end
+  def profile
+  end
 end

@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+
+jQuery(document).ready(function($) {
+  $('#centerbutton').click(function(e) {
+    e.preventDefault();
+    $('.circles li a').toggleClass('out');
+    $(this).toggleClass('centerbuttonon');
+  });;
+});

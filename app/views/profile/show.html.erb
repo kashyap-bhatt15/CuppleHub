@@ -68,13 +68,7 @@ _gaq.push(['_trackEvent', "Event", name]);
   }
 };
 </script>
-  <style type="text/css">
-    background: url('matchbackground.jpg')no-repeat center center fixed !important;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-  </style>
+
 </head>
 <body class=''>
 
@@ -126,15 +120,48 @@ _gaq.push(['_trackEvent', "Event", name]);
 
 
 <div class="wrap">
-  <% 6.times do  %>
-    <div class="activity">
-      <%= image_tag 'http://placehold.it/300x150&text=activity' %>
-      <h3></h3>
-      <p></p>
-      <h5>Price: $<%= rand(15..100) %></h5>
-      <%= link_to 'Invite', '#' %>
-    </div>
-  <% end %>
+  <div class="activity">
+    <%= image_tag '1_w.jpg' %>
+    <h3>Zip Line Adventure</h3>
+    <p>Includes an all-day zip-lining adventure for two or more couples</p>
+    <h5>$<%= rand(15..100) %></h5>
+    <%= link_to 'Invite', '#' %>
+  </div>
+  <div class="activity">
+    <%= image_tag 'BAR.jpg' %>
+    <h3>Drinks at Mulchaeys sports bar</h3>
+    <p>includes 2 rounds of drinks for the couple, and one appetizer</p>
+    <h5>$<%= rand(15..100) %></h5>
+    <%= link_to 'Invite', '#' %>
+  </div>
+  <div class="activity">
+    <%= image_tag 'double-date.jpg' %>
+    <h3>Dinner at Luigi's Italian Restaurant</h3>
+    <p>Includes 3 course prix-fix menu for two</p>
+    <h5>$<%= rand(15..100) %></h5>
+    <%= link_to 'Invite', '#' %>
+  </div>
+  <div class="activity">
+    <%= image_tag '16_w.jpg' %>
+    <h3>Helicopter Tour</h3>
+    <p>Includes a sunset helicopter tour of New York City for you and another couple</p>
+    <h5>$<%= rand(15..100) %></h5>
+    <%= link_to 'Invite', '#' %>
+  </div>
+  <div class="activity">
+    <%= image_tag 'museum.jpg' %>
+    <h3>Natural Museum of History</h3>
+    <p>Includes two full day tickets to the Museum</p>
+    <h5>$<%= rand(15..100) %></h5>
+    <%= link_to 'Invite', '#' %>
+  </div>
+  <div class="activity">
+    <%= image_tag '1_w (1).jpg' %>
+    <h3>Car Racing</h3>
+    <p>Includes two hours of exotic car racing for you and other couples</p>
+    <h5>$<%= rand(15..100) %></h5>
+    <%= link_to 'Invite', '#' %>
+  </div>
 </div>
 
 

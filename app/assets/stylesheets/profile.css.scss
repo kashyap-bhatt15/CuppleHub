@@ -2,18 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+body.proshow {
+  background: url('matchbackground.jpg')no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  color: #f7f7f7;
+}
 
 div.search-filter-select {
-  margin: 0 auto;
+  float: right;
 }
 
 
 div.wrap {
   text-align: center;
   div.activity {
+    padding: 5px;
+    width: 300px;
+    // height: 400px;
     display: inline-block;
-    background: lighten(rgb(0,0,0), 35%);
+    background: white;
+    color: black;
     margin: 15px;
+
   }
 }

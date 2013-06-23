@@ -6,10 +6,10 @@
 section#intro {
   background: url("cupplebackground.jpg") no-repeat center center fixed,
   url("cupplewhitelogo.png");
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-size: 50px,cover;
+  -webkit-background-size: 50px,cover;
+  -moz-background-size: 50px,cover;
+  -o-background-size: 50px,cover;
   div.icon {
     width: 150px;
   }

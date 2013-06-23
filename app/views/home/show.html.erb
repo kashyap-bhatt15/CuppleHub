@@ -7,13 +7,13 @@
   <div class="modal-body">
       <ul>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Movies", class: "modal-image1") %>
+					<%= image_tag("profiles/movie.jpg", class: "modal-image1") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Concert", class: "modal-image1") %>
+					<%= image_tag("profiles/concert.jpg", class: "modal-image1") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Board%20Games", class: "modal-image1") %>
+					<%= image_tag("profiles/board_games.jpg", class: "modal-image1") %>
         </li>
       </ul>  
   </div>
@@ -32,13 +32,13 @@
   <div class="modal-body">
       <ul>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Vegetarian", class: "modal-image2") %>
+					<%= image_tag("profiles/veg.jpg", class: "modal-image2") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Ethnic", class: "modal-image2") %>
+					<%= image_tag("profiles/ethnic.jpg", class: "modal-image2") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=American", class: "modal-image2") %>
+					<%= image_tag("profiles/american.jpg", class: "modal-image2") %>
         </li>
       </ul>  
   </div>
@@ -57,13 +57,13 @@
   <div class="modal-body">
       <ul>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Wine", class: "modal-image3") %>
+					<%= image_tag("profiles/wine.jpg", class: "modal-image3") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Beer", class: "modal-image3") %>
+					<%= image_tag("profiles/beer.jpg", class: "modal-image3") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Soda", class: "modal-image3") %>
+					<%= image_tag("profiles/soda.jpg", class: "modal-image3") %>
         </li>
       </ul>  
   </div>
@@ -82,13 +82,13 @@
   <div class="modal-body">
       <ul>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Dancing", class: "modal-image4") %>
+					<%= image_tag("profiles/dancing.jpg", class: "modal-image4") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Lounge", class: "modal-image4") %>
+					<%= image_tag("profiles/lounge.jpg", class: "modal-image4") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Pub", class: "modal-image4") %>
+					<%= image_tag("profiles/pub.jpg", class: "modal-image4") %>
         </li>
       </ul>  
   </div>
@@ -107,13 +107,13 @@
   <div class="modal-body">
       <ul>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Hiking", class: "modal-image5") %>
+					<%= image_tag("profiles/hiking.jpg", class: "modal-image5") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Dodgeball", class: "modal-image5") %>
+					<%= image_tag("profiles/dodgeball.jpg", class: "modal-image5") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Yoga", class: "modal-image5") %>
+					<%= image_tag("profiles/yoga.jpg", class: "modal-image5") %>
         </li>
       </ul>  
   </div>
@@ -133,13 +133,13 @@
   <div class="modal-body">
       <ul>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=OutDoor%20Excursion", class: "modal-image6") %>
+					<%= image_tag("profiles/outdoor.jpg", class: "modal-image6") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Road%20Trip", class: "modal-image6") %>
+					<%= image_tag("profiles/roadtrip.jpg", class: "modal-image6") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Farmer%20Market", class: "modal-image6") %>
+					<%= image_tag("profiles/farmers_market.jpg", class: "modal-image6") %>
         </li>
       </ul>  
   </div>
@@ -158,13 +158,13 @@
   <div class="modal-body">
       <ul>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Broadway", class: "modal-image7") %>
+					<%= image_tag("profiles/broadway.jpg", class: "modal-image7") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Comedy%20Show", class: "modal-image7") %>
+					<%= image_tag("profiles/comedy.jpg", class: "modal-image7") %>
         </li>
         <li>
-					<%= image_tag("http://placehold.it/200x200&text=Museum", class: "modal-image7") %>
+					<%= image_tag("profiles/museums.jpg", class: "modal-image7") %>
         </li>
       </ul>  
   </div>
@@ -189,13 +189,35 @@
   </div>
 </div>
 
-<h1>Questionaire</h1>
-<!-- Button to trigger modal -->
-<a href="#myModal" role="button" class="btn modal-btn" data-toggle="modal">Click to answer some questions</a>
+
+
+<!-- Old page-->
+<!--<h1>Questionaire</h1>
+<!-- Button to trigger modal
+<a href="#myModal" role="button" class="btn modal-btn" data-toggle="modal">Click to answer some questions</a>-->
+<h2>The way couples connect with other couples</h2>
+<div class="splash">
+  <%= form_tag(questions_path) do  %>
+    <div>
+      <%= label_tag :email do %>
+        <%= text_field_tag :email, nil, autofocus: true, placeholder: "Enter your email to get started!" %>
+      <% end %>
+      <%= submit_tag 'Go!', :class => "button" %>
+    </div>
+  <% end %>  
+</div>
+ 
  
 
 
 <script type="text/javascript">
+
+$('body').modalmanager('loading');
+      setTimeout(function(){
+		    $("#modal1").modal({ width: '750px'
+		    });
+		  }, 500);
+
 
 $('.modal-btn').on('click', function() {
       //alert($(this).text());
@@ -234,17 +256,8 @@ $(".modal-image8").on('click', function() {
 	.modal, .modal.fade.in {
     top: 40% !important; /* was 10% */
 	}
-<<<<<<< HEAD
+
   
-  ul {
-    list-style: none;
-    text-align: center;
-    li {
-      margin: 5px;
-      display: inline-block;
-      text-align: center;
-    }
-=======
   ul {
     list-style: none;
     text-align: center;
@@ -252,7 +265,10 @@ $(".modal-image8").on('click', function() {
   ul li {
     margin: 5px;
     display: inline-block;
->>>>>>> 94eba957d1c623108a5cbba127dfccd8ce1dc65c
+  }
+  
+  .modal-header h3 {
+  	color:brown;
   }
 </style>
 

@@ -10,12 +10,10 @@ class HomeController < ApplicationController
   end
   
   def profile
+
     respond_to do |format|
       format.html
-      format.js
+      format.js {render :couple_data}
     end
-  end
-  def get_couple
-    @couple = Couple.find(params[:id])
   end
 end

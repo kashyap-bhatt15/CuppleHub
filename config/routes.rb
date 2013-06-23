@@ -4,7 +4,7 @@ CuppleHub::Application.routes.draw do
   match "/welcome", to: 'home#splash', as: 'welcome'
   match "/profile", to: 'home#profile', as: 'profile'
   get "front/index"
-
+  get 'home/get_couple'
   get "modal/index"
   get "home/modal1"
 

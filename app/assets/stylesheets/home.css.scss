@@ -3,7 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // questions page
+@import url(http://fonts.googleapis.com/css?family=Varela);
 
+body {
+  font-family: 'Varela', sans-serif;
+}
 
 div.questions {
   text-align: center;
@@ -29,8 +33,9 @@ body.splash {
   -o-background-size: cover;
   color: white;
   h2 {
-    text-align: center;
-    margin-top: 500px;
+    position: fixed;
+    top: 65%;
+    left: 25%;
   }
   div.splash {
     top: 80%;
@@ -71,6 +76,14 @@ body.splash {
 
 
 // Profile page
+
+body {
+  background: url('matchbackground.jpg')no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
 
 div.info {
   width: 30%;

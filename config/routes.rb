@@ -14,5 +14,5 @@ CuppleHub::Application.routes.draw do
     resources :user_likes
   end
 
-  root to: 'home#index'
+  root to: 'home#splash'
 end

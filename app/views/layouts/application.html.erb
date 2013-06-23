@@ -11,8 +11,13 @@
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
   </head>
-  <% if params[:action] == 'splash' || params[:action] == 'profile' || params[:action] == 'show' %>
-    <body class="<%='splash' if params[:action] == 'splash' || (params[:action] == 'show' && params[:controller] != 'profile') %>" >
+  <% if params[:action] == 'splash' || (params[:controller] == 'home' && params[:action] == 'show') %>
+      <body class="splash" >
+    <% elsif params[:action] == 'show' && params[:controller] == 'profile' %>
+      <body class="proshow" >
+    <% else  %>
+      <body>
+    <% end %>
       <%= render 'layouts/header' %>
       <div id="main" role="main">
         <div class="container">
@@ -29,23 +34,5 @@
         </div> <!--! end of .container -->
       </div> <!--! end of #main -->
     </body>
-  <% else %>
-    <body>
-      <%= render 'layouts/header' %>
-      <div id="main" role="main">
-        <div class="container">
-          <div class="content">
-             <div class="row">
-              <div class="span12">
-                <%= render 'layouts/messages' %>
-                <%= yield %>
-              </div>
-            </div>
-            <footer>
-            </footer>
-          </div>
-        </div> <!--! end of .container -->
-      </div> <!--! end of #main -->
-    </body>
-  <% end %>
+
 </html>

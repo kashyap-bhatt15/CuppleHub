@@ -121,13 +121,6 @@ _gaq.push(['_trackEvent', "Event", name]);
 
 <div class="wrap">
   <div class="activity">
-    <%= image_tag '1_w.jpg' %>
-    <h3>Zip Line Adventure</h3>
-    <p>Includes an all-day zip-lining adventure for two or more couples</p>
-    <h5>$<%= rand(15..100) %></h5>
-    <%= link_to 'Invite', '#' %>
-  </div>
-  <div class="activity">
     <%= image_tag 'BAR.jpg' %>
     <h3>Drinks at Mulchaeys sports bar</h3>
     <p>includes 2 rounds of drinks for the couple, and one appetizer</p>
@@ -159,6 +152,13 @@ _gaq.push(['_trackEvent', "Event", name]);
     <%= image_tag '1_w (1).jpg' %>
     <h3>Car Racing</h3>
     <p>Includes two hours of exotic car racing for you and other couples</p>
+    <h5>$<%= rand(15..100) %></h5>
+    <%= link_to 'Invite', '#' %>
+  </div>
+    <div class="activity">
+    <%= image_tag 'zipline.png' %>
+    <h3>Zip Line Adventure</h3>
+    <p>Includes an all-day zip-lining adventure for two or more couples</p>
     <h5>$<%= rand(15..100) %></h5>
     <%= link_to 'Invite', '#' %>
   </div>

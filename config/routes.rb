@@ -1,6 +1,7 @@
 CuppleHub::Application.routes.draw do
 
   match "/welcome", to: 'home#splash', as: 'welcome'
+  match "/profile", to: 'home#profile', as: 'profile'
   get "front/index"
 
   get "modal/index"
@@ -14,5 +15,5 @@ CuppleHub::Application.routes.draw do
     resources :user_likes
   end
 
-  root to: 'home#index'
+  root to: 'home#splash'
 end

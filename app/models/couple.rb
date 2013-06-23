@@ -6,8 +6,12 @@ class Couple < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :username, :his_name, :her_name
   # attr_accessible :title, :body
   has_one :user_like, :dependent => :destroy
   accepts_nested_attributes_for :user_like
+
+  def couple_names
+    "#{self.her_name} & #{self.his_name}"
+  end
 end

@@ -1,5 +1,6 @@
 CuppleHub::Application.routes.draw do
 
+
   match "/welcome", to: 'home#splash', as: 'welcome'
   match "/profile", to: 'home#profile', as: 'profile'
   get "front/index"

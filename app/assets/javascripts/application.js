@@ -17,9 +17,7 @@
 
 
 jQuery(document).ready(function($) {
-  $('#centerbutton').click(function(e) {
-    e.preventDefault();
+  $('#centerbutton').ready(function() {
     $('.circles li a').toggleClass('out');
-    // $(this).toggleClass('centerbuttonon');
   });
 });

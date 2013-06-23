@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130622194445) do
+ActiveRecord::Schema.define(:version => 20130623064638) do
 
   create_table "couples", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -26,6 +26,9 @@ ActiveRecord::Schema.define(:version => 20130622194445) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "username"
+    t.string   "his_name"
+    t.string   "her_name"
   end
 
   add_index "couples", ["email"], :name => "index_couples_on_email", :unique => true
@@ -37,6 +40,17 @@ ActiveRecord::Schema.define(:version => 20130622194445) do
     t.string   "address"
     t.string   "lat"
     t.string   "long"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "questions", :force => true do |t|
+    t.string   "a"
+    t.string   "b"
+    t.string   "c"
+    t.string   "d"
+    t.string   "e"
+    t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

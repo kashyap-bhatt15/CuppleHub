@@ -1,5 +1,5 @@
 class FrontController < ApplicationController
   def index
-  	render :layout => "onepage"
+  	render layout: "onepage"
   end
 end

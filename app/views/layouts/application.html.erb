@@ -12,7 +12,7 @@
     <%= yield(:head) %>
   </head>
   <% if params[:action] == 'splash' || params[:action] == 'profile' || params[:action] == 'show' %>
-    <body class="<%='splash' if params[:action] == 'splash' || params[:action] == 'show' %>" >
+    <body class="<%='splash' if params[:action] == 'splash' || (params[:action] == 'show' && params[:controller] != 'profile') %>" >
       <%= render 'layouts/header' %>
       <div id="main" role="main">
         <div class="container">

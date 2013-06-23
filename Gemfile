@@ -7,7 +7,8 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 gem 'devise'
-
+gem 'better_errors'
+gem "binding_of_caller"
 
 
 # Gems used only for assets and not required

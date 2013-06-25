@@ -3,7 +3,7 @@ CuppleHub::Application.routes.draw do
 
   resources :emails
 
-
+  match "/thanks", to: 'home#thanks', as: 'thanks'
   get "profile/show"
 
   match "/welcome", to: 'home#splash', as: 'welcome'

@@ -1,6 +1,9 @@
 CuppleHub::Application.routes.draw do
 
 
+  resources :emails
+
+
   get "profile/show"
 
   match "/welcome", to: 'home#splash', as: 'welcome'

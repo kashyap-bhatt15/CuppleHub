@@ -5,8 +5,6 @@
 16_w/index.jpg: 16_w-94efa98e0022a88fd633191f4951ef58.jpg
 1_w (1).jpg: 1_w (1)-315f174e9f568075e7ea9c8ce3a923db.jpg
 1_w (1)/index.jpg: 1_w (1)-315f174e9f568075e7ea9c8ce3a923db.jpg
-1_w.jpg: 1_w-9b8fcd781fdd5ae9418b316114eaa23d.jpg
-1_w/index.jpg: 1_w-9b8fcd781fdd5ae9418b316114eaa23d.jpg
 2.jpg: 2-295e3cdd6f911c302ec8d5410869947e.jpg
 2/index.jpg: 2-295e3cdd6f911c302ec8d5410869947e.jpg
 3.jpg: 3-ccf1de89294117f9f162d504bf80560e.jpg
@@ -23,6 +21,8 @@ couple.jpg: couple-2d8715d30bcd1a2eac887c7da724769f.jpg
 couple/index.jpg: couple-2d8715d30bcd1a2eac887c7da724769f.jpg
 cupple_hub.svg: cupple_hub-3831cd2c8baedb802c4b5b0d883d78d8.svg
 cupple_hub/index.svg: cupple_hub-3831cd2c8baedb802c4b5b0d883d78d8.svg
+cupple_hub_v2.svg: cupple_hub_v2-37c6c206380d69ac50a715060c233dd3.svg
+cupple_hub_v2/index.svg: cupple_hub_v2-37c6c206380d69ac50a715060c233dd3.svg
 cupplebackground.jpg: cupplebackground-be90a8fbbd50e8f311ea1cd0677c7d86.jpg
 cupplebackground/index.jpg: cupplebackground-be90a8fbbd50e8f311ea1cd0677c7d86.jpg
 cupplehubmini.png: cupplehubmini-eaf846b5308465a3d17f1dad4820d5fb.png
@@ -37,6 +37,10 @@ matchbackground.jpg: matchbackground-696687825ab4625c0ec7d979550c3822.jpg
 matchbackground/index.jpg: matchbackground-696687825ab4625c0ec7d979550c3822.jpg
 museum.jpg: museum-25b0a90b6f473ccfd284f1fde415aecc.jpg
 museum/index.jpg: museum-25b0a90b6f473ccfd284f1fde415aecc.jpg
+newcupplelogo.svg: newcupplelogo-17404f383232425298f06503a73bc6c5.svg
+newcupplelogo/index.svg: newcupplelogo-17404f383232425298f06503a73bc6c5.svg
+newcupplelogomini.svg: newcupplelogomini-b43397d6df2e8d3b9849ada94c660a3e.svg
+newcupplelogomini/index.svg: newcupplelogomini-b43397d6df2e8d3b9849ada94c660a3e.svg
 profiles/american.jpg: profiles/american-b30d796a95c79362c239383dd1a9b972.jpg
 profiles/american/index.jpg: profiles/american-b30d796a95c79362c239383dd1a9b972.jpg
 profiles/beer.jpg: profiles/beer-ce1d8f2e35c3887f0274db96569e83c0.jpg
@@ -81,10 +85,10 @@ profiles/yoga.jpg: profiles/yoga-4a679633ced233fea2fbb6124889c35b.jpg
 profiles/yoga/index.jpg: profiles/yoga-4a679633ced233fea2fbb6124889c35b.jpg
 zipline.png: zipline-3f632b0fe09e9562652ae878c8ff1044.png
 zipline/index.png: zipline-3f632b0fe09e9562652ae878c8ff1044.png
-application.js: application-3fb08ef400d2f1b148654edadeab358d.js
-application/index.js: application-3fb08ef400d2f1b148654edadeab358d.js
-application.css: application-7854d6d3a48e7d6a5ce55de8318c7eda.css
-application/index.css: application-7854d6d3a48e7d6a5ce55de8318c7eda.css
+application.js: application-e7960f25dc8d8ceddc8d6162d6e00ae5.js
+application/index.js: application-e7960f25dc8d8ceddc8d6162d6e00ae5.js
+application.css: application-b8ab0ceabbcfe1d8728a011ce3266305.css
+application/index.css: application-b8ab0ceabbcfe1d8728a011ce3266305.css
 glyphicons-halflings-white.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
 glyphicons-halflings-white/index.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
 glyphicons-halflings.png: glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png

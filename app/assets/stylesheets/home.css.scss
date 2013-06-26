@@ -31,12 +31,12 @@ div.questions {
 // Splash page
 
 body.splash {
-  background: url('cupple_hub.svg')no-repeat 30px center fixed,
+  background: url('cupple_hub_v2.svg')no-repeat -270px -100px fixed,
               url('cupplebackground.jpg')no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-size: 2400px,cover;
+  -webkit-background-size: 2400px,cover;
+  -moz-background-size: 2000px,cover;
+  -o-background-size: 2000px,cover;
   color: white;
   h2 {
     position: fixed;

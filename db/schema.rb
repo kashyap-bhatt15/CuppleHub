@@ -50,17 +50,6 @@ ActiveRecord::Schema.define(:version => 20130625013528) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "questions", :force => true do |t|
-    t.string   "a"
-    t.string   "b"
-    t.string   "c"
-    t.string   "d"
-    t.string   "e"
-    t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "tests", :force => true do |t|
     t.string   "name"
     t.string   "url"
